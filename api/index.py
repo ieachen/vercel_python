@@ -31,17 +31,17 @@ class handler(BaseHTTPRequestHandler):
         self.wfile.write(message_bytes)
 
 
-def run():
-    from http.server import HTTPServer
+# def run():
+#     from http.server import HTTPServer
 
-    host = ('localhost', 8888)
-    server = HTTPServer(host, handler)
-    print("Starting server, listen at: %s:%s" % host)
-    server.serve_forever()
+#     host = ('localhost', 8888)
+#     server = HTTPServer(host, handler)
+#     print("Starting server, listen at: %s:%s" % host)
+#     server.serve_forever()
 
-    # 然后在浏览器打开  http://localhost:8888/  即可访问
+#     # 然后在浏览器打开  http://localhost:8888/  即可访问
 
-    return
+#     return
 
 
 # 本地调试需要运行以下的 run()。
